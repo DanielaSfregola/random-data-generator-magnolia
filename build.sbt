@@ -27,7 +27,7 @@ libraryDependencies ++= {
 }
 
 lazy val standardSettings = Seq(
-  crossScalaVersions := Seq("2.12.3", "2.11.8", "2.10.6"),
+  crossScalaVersions := Seq("2.12.4", "2.11.8", "2.10.6"),
   organization := "com.danielasfregola",
   licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html")),
   homepage := Some(url("https://github.com/DanielaSfregola/random-data-generator-magnolia")),
@@ -69,5 +69,5 @@ lazy val standardSettings = Seq(
 lazy val root = (project in file("."))
   .settings(standardSettings)
   .settings(
-    name := "twitter4s"
+    name := "random-data-generator-magnolia"
   )

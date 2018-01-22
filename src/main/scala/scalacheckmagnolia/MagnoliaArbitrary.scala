@@ -6,7 +6,9 @@ import org.scalacheck.{Arbitrary, Gen, GenHack}
 
 // copied and adapted from https://github.com/etaty/scalacheck-magnolia
 
-object MagnoliaArbitrary {
+object MagnoliaArbitrary extends MagnoliaArbitrary
+
+trait MagnoliaArbitrary {
   type Typeclass[T] = Arbitrary[T]
 
   def combine[T](caseClass: CaseClass[Arbitrary, T]): Arbitrary[T] = Arbitrary[T] {

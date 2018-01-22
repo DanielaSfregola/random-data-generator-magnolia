@@ -7,8 +7,6 @@ object RandomDataGenerator extends RandomDataGenerator
 
 trait RandomDataGenerator extends MagnoliaLike {
 
-  import scalacheckmagnolia.MagnoliaArbitrary._
-
   protected[randomdatagenerator] val seed = SeedDetector.seed
 
   def random[T](implicit arb: Arbitrary[T]): T = random(1)(arb).head

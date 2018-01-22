@@ -2,4 +2,4 @@ package com.danielasfregola.randomdatagenerator.magnolia.utils
 
 import scalacheckmagnolia.MagnoliaArbitrary
 
-private[randomdatagenerator] trait MagnoliaLike
+private[randomdatagenerator] trait MagnoliaLike extends MagnoliaArbitrary
