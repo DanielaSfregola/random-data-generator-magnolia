@@ -20,20 +20,9 @@ after_success:
 scala:
   - 2.12.4
   - 2.11.11
-  - 2.10.6
 
 jdk:
-  - oraclejdk7
   - oraclejdk8
-
-matrix:
-  exclude:
-  - scala: 2.12.4
-    jdk: oraclejdk7
-  - scala: 2.10.6
-    jdk: oraclejdk8
-  - scala: 2.11.11
-    jdk: oraclejdk8
 
 env:
   - SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
