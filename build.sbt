@@ -1,7 +1,7 @@
 import com.typesafe.sbt.SbtGit.GitKeys._
 
 name := "random-data-generator-magnolia"
-version := "2.3-SNAPSHOT"
+version := "2.4"
 
 scalaVersion := "2.12.4"
 
@@ -27,7 +27,8 @@ libraryDependencies ++= {
 }
 
 lazy val standardSettings = Seq(
-  crossScalaVersions := Seq("2.12.4", "2.11.8", "2.10.6"),
+  name := "random-data-generator-magnolia",
+  crossScalaVersions := Seq("2.12.4", "2.11.8"),
   organization := "com.danielasfregola",
   licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html")),
   homepage := Some(url("https://github.com/DanielaSfregola/random-data-generator-magnolia")),
@@ -45,6 +46,10 @@ lazy val standardSettings = Seq(
   </developers>
   ),
   publishMavenStyle := true,
+  publishTo := {
+    if (version.value.trim.endsWith("SNAPSHOT")) Some(Opts.resolver.sonatypeSnapshots)
+    else Some(Opts.resolver.sonatypeStaging)
+  },
   gitRemoteRepo := "git@github.com:DanielaSfregola/random-data-generator-magnolia.git",
   scalacOptions ++= Seq("-encoding",
                         "UTF-8",
@@ -68,6 +73,3 @@ lazy val standardSettings = Seq(
 
 lazy val root = (project in file("."))
   .settings(standardSettings)
-  .settings(
-    name := "random-data-generator-magnolia"
-  )
