@@ -21,6 +21,7 @@ libraryDependencies ++= {
   Seq(
     "com.propensive" %% "magnolia" % Magnolia,
     "org.scalacheck" %% "scalacheck" % Scalacheck,
+    "org.scala-lang" % "scala-reflect" % scalaVersion.value,
     "org.specs2" %% "specs2-core" % Spec2 % "test",
     "org.specs2" %% "specs2-mock" % Spec2 % "test"
   )
