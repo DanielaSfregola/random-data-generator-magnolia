@@ -4,6 +4,7 @@ import com.danielasfregola.randomdatagenerator.magnolia.utils.{SeedDetector, Mag
 import org.scalacheck._
 
 import scala.reflect.runtime.universe._
+import scala.util.{Try, Success}
 
 object RandomDataGenerator extends RandomDataGenerator
 
@@ -14,12 +15,10 @@ trait RandomDataGenerator extends MagnoliaLike {
   def random[T: WeakTypeTag: Arbitrary]: T = random(1).head
 
   def random[T: WeakTypeTag: Arbitrary](n: Int): Seq[T] = {
-    import scala.util.{ Try, Success, Failure }
-
-    val gen = Gen.listOfN(n, implicitly[Arbitrary[T]].arbitrary)
+    val gen = Gen.infiniteStream(implicitly[Arbitrary[T]].arbitrary)
     Try(gen.apply(Gen.Parameters.default, seed)) match {
-      case Success(Some(v)) => v
-      case _ => explode[T]
+      case Success(Some(v)) => v.take(n)
+      case _                => explode[T]
     }
   }
 
