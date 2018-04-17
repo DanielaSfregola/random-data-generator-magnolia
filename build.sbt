@@ -1,7 +1,7 @@
 import com.typesafe.sbt.SbtGit.GitKeys._
 
 name := "random-data-generator-magnolia"
-version := "2.4.1"
+version := "2.5"
 
 scalaVersion := "2.12.4"
 
