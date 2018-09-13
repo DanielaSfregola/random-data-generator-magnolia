@@ -3,7 +3,7 @@ import com.typesafe.sbt.SbtGit.GitKeys._
 name := "random-data-generator-magnolia"
 version := "2.6-SNAPSHOT"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.6"
 
 scalacOptions in Test ++= Seq("-Yrangepos")
 
@@ -14,9 +14,9 @@ libraryDependencies ++= {
 }
 
 libraryDependencies ++= {
-  val Magnolia = "0.7.1"
+  val Magnolia = "0.9.1"
   val Scalacheck = "1.13.4"
-  val Spec2 = "3.8.6"
+  val Spec2 = "4.3.4"
 
   Seq(
     "com.propensive" %% "magnolia" % Magnolia,
@@ -29,7 +29,7 @@ libraryDependencies ++= {
 
 lazy val standardSettings = Seq(
   name := "random-data-generator-magnolia",
-  crossScalaVersions := Seq("2.12.4", "2.11.8"),
+  crossScalaVersions := Seq("2.12.6", "2.11.8"),
   organization := "com.danielasfregola",
   licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html")),
   homepage := Some(url("https://github.com/DanielaSfregola/random-data-generator-magnolia")),
