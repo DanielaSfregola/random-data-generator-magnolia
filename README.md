@@ -9,7 +9,7 @@ This library is the evolution of [random-data-generator](https://github.com/Dani
 
 Setup
 -----
-Supported Scala versions: 2.11.x, 2.12.x
+Supported Scala versions: 2.12.x, 2.13.x
 
 If you don't have it already, make sure you add the Maven Central as resolver in your SBT settings:
 ```scala
@@ -18,7 +18,7 @@ resolvers += Resolver.sonatypeRepo("releases")
 
 Also, you need to include the library as your dependency:
 ```scala
-libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.6"
+libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.7"
 ```
 
 Usage
@@ -129,5 +129,5 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 Then, add the library as your dependency:
 ```scala
-libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.7-SNAPSHOT"
+libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.8-SNAPSHOT"
 ```
