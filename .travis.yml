@@ -22,12 +22,6 @@ scala:
   - 2.12.4
   - 2.11.11
 
-jdk:
-  - oraclejdk8
-
-env:
-  - SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
-
 # whitelist
 branches:
   only:
