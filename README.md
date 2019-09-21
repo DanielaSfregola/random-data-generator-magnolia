@@ -1,7 +1,7 @@
 random-data-generator-magnolia
 =====================
 
-[![Build Status](https://travis-ci.org/DanielaSfregola/random-data-generator-magnolia.svg?branch=master)](https://travis-ci.org/DanielaSfregola/random-data-generator-magnolia) [![codecov.io](http://codecov.io/github/DanielaSfregola/random-data-generator-magnolia/coverage.svg?branch=master)](http://codecov.io/github/DanielaSfregola/random-data-generator-magnolia?branch=master) [![License](http://img.shields.io/:license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt) [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/random-data-generator-magnolia/Lobby)
+[![Build Status](https://travis-ci.org/DanielaSfregola/random-data-generator-magnolia.svg?branch=master)](https://travis-ci.org/DanielaSfregola/random-data-generator-magnolia) [![License](http://img.shields.io/:license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt) [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/random-data-generator-magnolia/Lobby)
 
 A library to generate random data for test purposes, using [ScalaCheck](https://github.com/rickynils/scalacheck) and [scalacheck-magnolia](https://github.com/etaty/scalacheck-magnolia).
 
