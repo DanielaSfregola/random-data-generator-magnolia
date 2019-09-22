@@ -13,7 +13,7 @@ libraryDependencies ++= {
 
 libraryDependencies ++= {
   val Magnolia = "0.11.0"
-  val Scalacheck = "1.14.0"
+  val Scalacheck = "1.14.1"
   val Spec2 = "4.6.0"
 
   Seq(
