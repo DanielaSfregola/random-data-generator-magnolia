@@ -1,7 +1,7 @@
 import com.typesafe.sbt.SbtGit.GitKeys._
 
 name := "random-data-generator-magnolia"
-version := "2.9"
+version := "2.10-SNAPSHOT"
 
 scalacOptions in Test ++= Seq("-Yrangepos", "-language:higherKinds")
 
