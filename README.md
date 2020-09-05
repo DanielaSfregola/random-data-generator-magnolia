@@ -9,7 +9,7 @@ This library is the evolution of [random-data-generator](https://github.com/Dani
 
 Setup
 -----
-Supported Scala versions: 2.13.x, 2.12.x
+Supported Scala versions: 2.12+
 
 If you don't have it already, make sure you add the Maven Central as resolver in your SBT settings:
 ```scala
@@ -18,7 +18,7 @@ resolvers += Resolver.sonatypeRepo("releases")
 
 Also, you need to include the library as your dependency:
 ```scala
-libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.8"
+libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.9"
 ```
 
 Usage
@@ -91,7 +91,7 @@ otherwise, the following message will appear:
 [info] [RandomDataGenerator] No variable RANDOM_DATA_GENERATOR_SEED detected: setting seed to random number
 ```
 
-Multiple Random Instances 
+Multiple Random Instances
 -------------------------
 Fixing the seed at the beginning of each session has an important side effect: when calling the function `random[T]`, we always get the same instance back.
 However, sometimes we do need multiple instances of the same case class within the same test.
@@ -129,5 +129,5 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 Then, add the library as your dependency:
 ```scala
-libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.9-SNAPSHOT"
+libraryDependencies += "com.danielasfregola" %% "random-data-generator-magnolia" % "2.10-SNAPSHOT"
 ```
