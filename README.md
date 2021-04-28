@@ -1,3 +1,10 @@
+This project is no longer maintained
+=====================
+
+Please use [random-data-generator](https://github.com/DanielaSfregola/random-data-generator) instead.
+
+
+
 random-data-generator-magnolia
 =====================
 
